@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600&family=Poppins:wght@500&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,700&display=swap');
+*,html,body{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'nunito', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+h2{
+    font-size: 3rem;
+    font-weight: 800;
+    text-align: center;
+    padding: 1em;
+    color: rgb(134, 5, 5);
+}
+
+/* _____________________Header_______________ */
+
+header{
+    width: 100%;
+    height: 100vh;
+   
+    color: #fff; 
+    padding: 4rem;
+    background: url("/img/hader\ bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment:scroll ;
+    
+}
+nav{
+     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo{
+  
+   
+
+}
+
+.logo > img{
+    width: 4rem ;
+    display: inline-block;
+
+
+}
+.toggle{
+    display: none;
+}
+.menu{
+    display: flex;
+    font-size: 1.3em;
+    justify-content: space-between;
+    align-items:center;
+    list-style: none;
+
+}
+
+.menu li a{
+    color: #fff;
+    text-decoration: none;
+    padding-left: 1em;
+    transition: 0.2s ease-in;
+
+
+}
+.logo:hover,.menu li a:hover{
+    color: rgb(134, 5, 5);
+    letter-spacing: 0.05em;
+
+} 
+
+
+.content{
+    width: 100%;
+    top: 50%;
+    text-align: center;
+    transform: translateY(70%);
+
+}
+.content h2{
+    font-size: 3em;
+    font-weight: 300;
+    line-height: 2em;
+
+}
+.content button{
+    width: 8em;
+    padding: 0.8em 0;
+    text-align: center;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid rgb(134, 5, 5);
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: 0.5s ease-in;
+}
+
+.content button:hover {
+    background-color: #fff;
+    color: black;
+
+}
+.content button:hover{
+    border: none;
+}
+
+
+.btnRead:hover{
+    color: rgb(134, 5, 5) ;
+    background-color: rgb(255, 171, 171);
+} */
+/* ________________Beat Store________________ */
+
+#beats-store{
+     width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    padding: 2rem;
+
+}
+
+
+
+
+
+#beats-store .scroll-beats{
+    overflow: hidden;
+    overflow-y:scroll;
+    scrollbar-color:blue red;
+    height: 80vh;
+}
+
+
+
+
+
+/* _________________Small Devices_______________ */
+/* ________________HEADER_________________________ */
+@media all and (max-width:991px){
+
+    header > nav{
+      width: 100%;
+      display: flex;
+      padding: auto;
+      align-items: center;
+      justify-content: space-between;
+
+    }
+    .logo{
+        padding: 0;
+
+    }
+
+    .toggle{
+        display: block;
+        position: relative;
+        font-size: 3rem;
+        float: right;
+        left: 3em;
+        cursor: pointer;
+        z-index:20;
+    }
+    .logo{
+        position: relative;
+        z-index: 20;
+
+    }
+    .content h2{
+        padding-top: 1em;
+        font-size: 2em;
+        
+    
+    }
+    .ouvrir{
+        display: block;
+    }
+    .fermer{
+        display: none;
+    }
+    .open .ouvrir{
+        display: none;
+    }
+    .open .fermer{
+        display: block;
+    }
+    .menu {
+        position: absolute;
+        top: 0;
+        left:0;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(0,0,0,0.8);
+        flex-direction: column;
+        padding: 6rem 2rem;
+        justify-content: start;
+        align-items: flex-start;
+        transform: translateX(-100%);
+        transition: transform 0.5s ease-in;
+    }
+    .menu li{
+        padding: 1.5em 0;
+        font-size: 1.5rem;
+        transition: 0.2s ease-in;
+    }
+
+    .menu li:hover{
+        letter-spacing: 0.1em;
+
+    }
+    .btn{
+        font-size: 2rem;
+    }
+    .open .menu{
+        transform: translateX(0);
+    }
+    .open .content{
+        display: none;
+    }
+
+    /* Beat store  */
+
+    
+#beats-store{
+    width: 100%;
+}
+}
+
+
+
+
