@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site de production musicale et de vente d'instrumentales par ISIIS">
+    <meta name="author" content="">
+    <title>ISIIS BEAT</title>
+    <link rel="shortcut icon" href="img/Logo-isiis.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- _____________Headers _________________-->
+   
+  
+  <header class="">
+
+      
+ 
+        <nav>
+            <div class="logo">
+                <a href="#">            
+                    <span class="logo"><img src="img/Logo-isiis.png" alt=""></span>
+                </a>
+            </div>
+            
+            <div class="nav-toggle">
+              <div class="toggle">
+                <i class="fas fa-bars ouvrir"></i>
+                <i class="fas fa-times fermer"></i>
+            </div>
+            </div>
+
+            <ul class="menu">
+                <li><a class=""href="index.html">ACCEUIL</a></li>
+                <li><a href="index.html">BEATS</a></li>
+                <li><a href="index.html">SERVICES</a></li>
+                <li><a href="index.html">TUTO'S</a></li>
+                <li><a href="index.html">ABOUT </a></li>
+                <li><a href="index.html">CONTACT</a></li>
+                
+
+            </ul>
+            <i class="fa-solid fa-arrow-up" onclick="topFunction()" id="myBtn" title="Go to top"></i>
+
+        </nav >
+       
+    </header>
+    <section id="services" class="service-cont">
+        <div class=" content">
+            <div class="desc-service p-5">
+                <h3>
+                    Mes Services
+                </h3>
+                <p>
+                    Tu cherches un beat dope que tu es le seul à avoir ? <br>
+                    Tu as une chanson enregistrée sur un beat, et tu as besoin d'un mixage et d'un mastering professionnels ? <br>
+                     Contacte-moi en remplissant le formulaire ci-dessous et je te répondrez dans les plus brefs délais.
+                </p>
+                <div class="forms row">
+                    <form class="beatMaking col-md-5" class="row g-3" action="https://formsubmit.co/Issabobobalde4@gmail.com" method="POST">
+                        <h3>Beat personnalisée</h3>
+                        <p>Pleine propriété <br>
+                            Délai d'exécution rapide (1 semaine max)</p>
+                        <!-- Honeypot -->
+                        <input type="text" name="_honey" style="display: none;">
+                
+                        <!-- Disable Captcha -->
+                        <input type="hidden" name="_captcha" value="false">
+                
+                        <input type="hidden" name="_next" value="http://127.0.0.1:5501/succes.html" >
+                
+                     
+                        <div class="col-md-12 pt-4">
+                          <input type="text" class="form-control" name="Nom" id="lastName" placeholder="Nom" required>
+                        </div>
+                        <div class="col-md-12 pt-4">
+                          <input type="email" class="form-control" name="email" id="emailInfo" placeholder="email" required>
+                        </div>
+                        
+                        <div  style="color:white" class="col-md-12 pt-4">
+                          <textarea class="form-control" id="description" name="description" rows="3" required >Décrivez votre beat</textarea>
+                        </div>
+                        <div   class="col-md-12 pt-4">
+                          <button type="submit" class="btn_sub" >Envoyer</button>
+                        </div>
+                      </form>
+
+                    <form class="mixMaster col-md-5" class="row g-3" action="https://formsubmit.co/Issabobobalde4@gmail.com" method="POST">
+                        <h3>Mixage & Mastering</h3>
+                        
+                        <p>À partir de 60 € par chanson</p>
+                        <a class="my-4" href="https://youtube.com/playlist?list=PLuIohkBiT4VFD9nqpf-Wg_0i15zaF2KR1" target="_blank">
+                            <i class="fa-brands fa-youtube"> Ecouter des demos </i>
+                        </a>
+                        <br>
+                        <br>
+                        <p>Son de haute qualité <br>
+                            2 révisions gratuites</p>
+                        <!-- Honeypot -->
+
+                        <input type="text" name="_honey" style="display: none;">
+                
+                        <!-- Disable Captcha -->
+                        <input type="hidden" name="_captcha" value="false">
+                
+                        <input type="hidden" name="_next" value="http://127.0.0.1:5501/succes.html" >
+                
+                     
+                        <div class="col-md-12 pt-4">
+                          <input type="text" class="form-control" name="Nom" id="lastName" placeholder="Nom" required>
+                        </div>
+                        <div class="col-md-12 pt-4">
+                          <input type="email" class="form-control" name="email" id="emailInfo" placeholder="email" required>
+                        </div>
+                        
+                        <div  style="color:white" class="col-md-12 pt-4">
+                            <input type="number" class="form-control" name="Nombre_de_sons" id="Nombre_de_sons" placeholder="Nombre de chansons">
+
+                        </div>
+                        <div   class="col-md-12 pt-4">
+                          <button type="submit" class="btn_sub" >Envoyer</button>
+                        </div>
+                      </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>
+          &copy;2022 isiis | Tous droits réservés |  Créé par <span style="color:rgb(255, 0, 0)">isiis</span>
+        </p>
+      </footer>
+
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+          <script src="js/app.js"></script>
+</body>
+</html>
